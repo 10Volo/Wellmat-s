@@ -1,0 +1,39 @@
+.m-circle {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 35px;
+  position: relative;
+
+  &.play {
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 20px;
+      left: 28.5px;
+      border-top: 14.5px solid transparent;
+      border-left: 20px solid red;
+      border-bottom: 14.5px solid transparent;
+    }
+  }
+
+  &.scroll {
+    &:before {
+      content: ' ';
+      position: relative;
+      top: 24px;
+      left: 24.5px;
+      border: solid red;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+}
+

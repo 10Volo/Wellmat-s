@@ -1,0 +1,22 @@
+.line-left {
+  width: 60px;
+  height: 3px;
+  position: relative;
+  top: 51px;
+  left: 0;
+  background-color: red; }
+
+.line-cntr {
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto; }
+
+.line-rght {
+  width: 60px;
+  height: 3px;
+  position: relative;
+  top: 51px;
+  background-color: red;
+  float: right; }

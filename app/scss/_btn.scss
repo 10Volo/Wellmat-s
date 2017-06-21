@@ -1,0 +1,69 @@
+.btn-action {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-action:before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-color: red;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  border: 1.1px solid white;
+  border-radius: 15px;
+}
+
+.btn-action:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  border-radius: 2.5px;
+}
+
+.order {
+  background-color: red;
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 4px;
+  padding: 10px 15px 10px 20px;
+}
+
+
+//red line
+.line-left {
+  width: 60px;
+  height: 3px;
+  position: relative;
+  top: 51px;
+  left: 0;
+  background-color: red;
+}
+
+.line-cntr {
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-rght {
+  width: 60px;
+  height: 3px;
+  position: relative;
+  top: 58px;
+  background-color: red;
+  float: right;
+}
+
