@@ -2505,7 +2505,7 @@ header {
         flex-direction: column;
         transition: transform 0.2s ease-in-out; } }
     header .menu-nav .toggle {
-      position: fixed;
+      position: absolute;
       top: 20px;
       right: 20px;
       display: none;
@@ -2626,23 +2626,20 @@ header {
 
 .feedback .feedback-client {
   display: flex;
-  margin-top: 15px; }
+  margin: 30px 0; }
   .feedback .feedback-client .client-message {
     background-color: #f2f2f3;
-    margin-top: 35px;
     padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 30px; }
+    border-radius: 5px; }
 
 .feedback .feedback-wellmat {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin: 30px 0; }
   .feedback .feedback-wellmat .wellmat-message {
     background-color: #f2f2f3;
-    margin-top: 35px;
     padding: 5px;
-    border-radius: 5px;
-    margin-bottom: 30px; }
+    border-radius: 5px; }
 
 .why {
   background-image: url("../../app/img/why-me.jpg");
