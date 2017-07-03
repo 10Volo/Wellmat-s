@@ -5,3 +5,18 @@
 .mrg-10 {
   margin: 10px;
 }
+
+.mrg-t-15 {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.mrg-t-80 {
+  margin-top: 80px;
+}
+
+.hover-shadow {
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

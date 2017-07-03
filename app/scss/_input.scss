@@ -2,11 +2,18 @@
 
 .form-control {
   height: 40px;
-  width: 220px;
+  width: 100%;
   border-radius: 6px;
   border: none;
   margin: 5px;
   padding: 5px 0 5px 15px;
 
 
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-control:hover {
+  background-color: #dfdfdf;
 }
