@@ -1,22 +1,24 @@
 .line-left {
-  width: 60px;
-  height: 3px;
+  width: 82px;
+  height: 2px;
   position: relative;
-  top: 51px;
+  top: 46px;
   left: 0;
   background-color: red; }
 
 .line-cntr {
-  width: 60px;
+  width: 88px;
   height: 3px;
   background-color: red;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 31px;
+}
 
 .line-rght {
-  width: 60px;
-  height: 3px;
+  width: 81px;
+  height: 2px;
   position: relative;
-  top: 51px;
+  top: 109px;
   background-color: red;
   float: right; }
