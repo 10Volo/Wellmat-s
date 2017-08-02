@@ -160,12 +160,25 @@ header {
       margin: 40px 0;
     }
 
-    .info-form {
-      form {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+
+  }
+
+  .info-form {
+    form {
+      display: flex;
+
+      flex-wrap: nowrap;
+
+      .form-input {
+        margin: 0 20px 0 0;
       }
+
+      .btn-sub-order {
+        display: flex;
+        justify-content: center;
+        
+      }
+
     }
   }
 
@@ -262,6 +275,7 @@ header {
 
       img {
         border-radius: 5px;
+        width: 135%;
       }
     }
   }
@@ -336,6 +350,7 @@ header {
     .list-color-line {
       display: flex;
       img {
+        width: 135%;
         border-radius: 5px;
       }
     }
