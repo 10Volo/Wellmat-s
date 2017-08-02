@@ -176,9 +176,21 @@ header {
       .btn-sub-order {
         display: flex;
         justify-content: center;
-        
+
       }
 
+      @media (max-width: 767px) {
+        display: block;
+
+        .form-input {
+          margin: 0 0 10px 0;
+        }
+
+        .btn-sub-order {
+          justify-content: flex-start;
+        }
+
+      }
     }
   }
 
