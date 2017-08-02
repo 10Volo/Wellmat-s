@@ -2548,33 +2548,17 @@ header {
     color: #ffffff;
     line-height: 0.9;
     font-weight: 900;
-    margin-top: 144px; }
+    margin-top: 140px; }
   header .header-info .description {
     font-size: 20px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 26px;
-    margin-top: 18px;
-    line-height: 1.6; }
-    header .header-info .description p {
-      margin: 20px 0; }
-  header .header-info .info-form {
-    margin: 30px 0 0 30px; }
-    @media (max-width: 767px) {
-      header .header-info .info-form {
-        margin: 0; } }
-    header .header-info .info-form .btn-sub-order {
-      margin-left: 5px; }
-      @media (max-width: 767px) {
-        header .header-info .info-form .btn-sub-order {
-          display: flex;
-          justify-content: center;
-          margin: 0; } }
-  header .header-info form {
+    line-height: 1.6;
+    margin: 40px 0; }
+  header .header-info .info-form form {
     display: flex;
-    flex-wrap: wrap; }
-    header .header-info form .btn-action {
-      margin: 5px 0 0 4px; }
+    justify-content: space-between;
+    flex-wrap: nowrap; }
   header .info-play {
     position: absolute;
     left: 50%;
@@ -2596,14 +2580,22 @@ header {
     font-size: 14px;
     margin-top: 33px;
     margin-left: 145px; }
+  .photo-gallery .galery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media (max-width: 767px) {
+      .photo-gallery .galery {
+        justify-content: space-around; } }
+    .photo-gallery .galery img {
+      display: flex;
+      border-radius: 10px;
+      margin: 20% 0; }
   .photo-gallery .gallery-show-more {
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     text-align: center;
     margin: 30px 0 0; }
-  .photo-gallery .galery {
-    justify-content: space-around;
-    margin: 160px 0 145px 0; }
   .photo-gallery .galery-circle {
     position: absolute;
     bottom: -62px;
@@ -2623,28 +2615,44 @@ header {
     margin-right: 145px; }
   .main-general-color .gallery-color {
     margin-top: 77px;
-    justify-content: space-around; }
+    justify-content: space-between; }
+    @media (max-width: 767px) {
+      .main-general-color .gallery-color {
+        justify-content: space-around; } }
+    .main-general-color .gallery-color .color-skin {
+      display: flex; }
+      @media (max-width: 767px) {
+        .main-general-color .gallery-color .color-skin {
+          margin: 16% 0; } }
+      .main-general-color .gallery-color .color-skin img {
+        border-radius: 5px; }
 
 .type-line .type-line-title {
   font-family: 'Exo 2', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 32px;
+  margin-bottom: 50px;
   margin-left: 148px;
   color: #ff0000; }
 
-.type-line .type-line-img {
-  display: flex;
-  justify-content: center; }
-  .type-line .type-line-img img {
-    width: 760px;
-    height: 253px;
-    margin-left: auto;
-    margin-right: auto; }
-    @media (max-width: 767px) {
-      .type-line .type-line-img img {
-        width: 300px;
-        height: 90px; } }
+.type-line .list-type-line {
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .type-line .list-type-line {
+      justify-content: space-around; } }
+  .type-line .list-type-line .type-line-exmple {
+    display: flex;
+    margin: 5px 0; }
+    .type-line .list-type-line .type-line-exmple .type-line-photo img {
+      width: 200px; }
+    .type-line .list-type-line .type-line-exmple .line-name {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px 10px 10px; }
+      .type-line .list-type-line .type-line-exmple .line-name span {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 18px; }
 
 .main-general-color-line {
   background-color: #f6f6f6;
@@ -2660,7 +2668,11 @@ header {
     margin-right: 147px; }
   .main-general-color-line .gallery-color-line {
     margin-top: 90px;
-    justify-content: space-around; }
+    justify-content: space-between; }
+    .main-general-color-line .gallery-color-line .list-color-line {
+      display: flex; }
+      .main-general-color-line .gallery-color-line .list-color-line img {
+        border-radius: 5px; }
 
 .feedback {
   margin: 0 0 -60px;
@@ -2675,13 +2687,18 @@ header {
     display: flex;
     margin: 40px 0 0 0; }
     .feedback .feedback-client .client-avatar-face {
-      margin: 42px 0 0 39px; }
+      margin: 42px 0 0 0; }
     .feedback .feedback-client .client-message {
       width: 60%;
       background-color: #f2f2f3;
       margin: 102px 0 0 23px;
-      padding: 19px 43px 112px 43px;
-      border-radius: 8px; }
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Roboto', sans-serif; }
+      .feedback .feedback-client .client-message .client-message-name {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 0 0 20px 0; }
   .feedback .feedback-wellmat {
     display: flex;
     justify-content: flex-end;
@@ -2691,18 +2708,19 @@ header {
       color: #f6f6f6;
       width: 60%;
       margin: 58px 23px 0 0;
-      padding: 0 0 11px 0;
+      padding: 0 0 20px 0;
       font-family: 'Roboto', sans-serif;
       text-align: right;
       border-radius: 8px; }
       .feedback .feedback-wellmat .wellmat-message .wellmat-message-name {
         margin: 18px 47px 18px 0;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        letter-spacing: 3px; }
       .feedback .feedback-wellmat .wellmat-message .wellmat-message-text {
         margin: 22px 41px 0 26px;
         line-height: 1.6; }
     .feedback .feedback-wellmat .wellmat-avatar {
-      margin: 0 37px 0 0; }
+      margin: 0; }
   .feedback .chat-show-more {
     text-align: center;
     margin: 123px 0 0 0;
@@ -2721,6 +2739,13 @@ header {
   position: relative;
   width: 100%;
   padding: 24px 0 128px 0; }
+  .why:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -24px; }
   .why .scroll-down {
     top: -35px;
     left: 0;
@@ -2735,16 +2760,19 @@ header {
     background-color: #ffffff;
     float: right; }
   .why .why-title {
+    position: relative;
     font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     text-align: right;
     margin: 80px 143px 0 0; }
   .why .advantages p {
+    position: relative;
+    z-index: 10;
     font-family: 'Exo 2', sans-serif;
     font-size: 19px;
     text-align: left;
     margin: 70px 0 0 0;
-    padding: 20px 45px;
+    padding: 20px 0px;
     line-height: 1.7; }
   .why .element-duts-line {
     position: absolute;
@@ -2766,56 +2794,59 @@ header {
     margin-left: 146px; }
   .order-product .info-form {
     margin: 92px 0 0 0; }
-    .order-product .info-form .form-control {
-      height: 83px;
-      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
-      border-radius: 4px; }
-    .order-product .info-form .btn-sub-order {
+    .order-product .info-form form {
       display: flex;
-      justify-content: center; }
-    .order-product .info-form .btn-action {
-      width: 91px;
-      height: 83px;
-      margin: 6px 35px 0 35px; }
-      .order-product .info-form .btn-action:before {
-        width: 36px;
-        height: 36px;
-        top: 21px;
-        left: 26px;
-        border-radius: 16px; }
-      .order-product .info-form .btn-action:after {
-        width: 9px;
-        height: 9px;
-        top: 36px;
-        left: 40px;
-        border-radius: 4.5px; }
+      justify-content: space-between; }
+      .order-product .info-form form > .form-order {
+        width: calc(50% - 130px); }
+      .order-product .info-form form .form-control {
+        height: 83px;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        width: 100%; }
+      .order-product .info-form form .btn-sub-order {
+        display: flex;
+        justify-content: center; }
+      .order-product .info-form form .btn-action {
+        width: 91px;
+        height: 83px; }
+        .order-product .info-form form .btn-action:before {
+          width: 36px;
+          height: 36px;
+          top: 21px;
+          left: 26px;
+          border-radius: 16px; }
+        .order-product .info-form form .btn-action:after {
+          width: 9px;
+          height: 9px;
+          top: 36px;
+          left: 40px;
+          border-radius: 4.5px; }
 
 footer {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  height: 86px;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-  font-family: 'Exo 2', sans-serif;
-  align-items: center; }
-  footer .email {
-    margin: 6px 0 0 0; }
-  footer .logo {
-    background: rgba(255, 255, 255, 0.5);
-    margin: 2px 0 0 0; }
-    footer .logo img {
-      width: 80px;
-      height: 80px; }
-  footer .mobile {
-    margin: 6px 0 0 0; }
+  font-family: 'Exo 2', sans-serif; }
+  footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer-info .email {
+      margin: 6px 0 0 0; }
+    footer .footer-info .logo {
+      background: rgba(255, 255, 255, 0.5);
+      margin: 5px 0; }
+      footer .footer-info .logo img {
+        width: 80px;
+        height: 80px; }
+    footer .footer-info .mobile {
+      margin: 6px 0 0 0; }
 
 .form-control {
   height: 60px;
   border-radius: 6px;
   border: none;
-  margin: 5px 5px 5px 10px;
   padding: 5px 0 5px 15px;
   font-size: 22px; }
   .form-control:focus {
@@ -2889,14 +2920,21 @@ footer {
 .mrg-t-80 {
   margin-top: 80px; }
 
+.letter-sp-5 {
+  letter-spacing: 5px; }
+
 .hover-shadow:hover {
   background-color: rgba(255, 255, 255, 0.2); }
 
 .hvr-size-shadow:hover {
-  box-shadow: 0.5px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.05); }
+  -webkit-transition: all 350ms ease-in;
+  -webkit-transform: scale(1.4); }
+  @media (max-width: 767px) {
+    .hvr-size-shadow:hover {
+      -webkit-transition: all 300ms ease-in;
+      -webkit-transform: scale(1.05); } }
 
 .m-duts .duts {
   width: 5px;

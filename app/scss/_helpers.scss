@@ -14,6 +14,10 @@
   margin-top: 80px;
 }
 
+.letter-sp-5 {
+  letter-spacing: 5px;
+}
+
 .hover-shadow {
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -22,12 +26,16 @@
 
 .hvr-size-shadow {
   &:hover {
-    box-shadow: 0.5px 0px 5px 2px rgba(0, 0, 0 ,0.2);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0 ,0.2);
     //border: 1px solid #000000;
     border-radius: 6px;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.05);
+    -webkit-transition: all 350ms ease-in;
+    -webkit-transform: scale(1.4);
 
+    @media (max-width: 767px) {
+      -webkit-transition: all 300ms ease-in;
+      -webkit-transform: scale(1.05);
 
+    }
    }
 }
