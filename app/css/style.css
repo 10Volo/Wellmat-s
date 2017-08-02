@@ -2555,10 +2555,21 @@ header {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 40px 0; }
-  header .header-info .info-form form {
+  header .info-form form {
     display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap; }
+    header .info-form form .form-input {
+      margin: 0 20px 0 0; }
+    header .info-form form .btn-sub-order {
+      display: flex;
+      justify-content: center; }
+    @media (max-width: 767px) {
+      header .info-form form {
+        display: block; }
+        header .info-form form .form-input {
+          margin: 0 0 10px 0; }
+        header .info-form form .btn-sub-order {
+          justify-content: flex-start; } }
   header .info-play {
     position: absolute;
     left: 50%;
@@ -2625,7 +2636,8 @@ header {
         .main-general-color .gallery-color .color-skin {
           margin: 16% 0; } }
       .main-general-color .gallery-color .color-skin img {
-        border-radius: 5px; }
+        border-radius: 5px;
+        width: 135%; }
 
 .type-line .type-line-title {
   font-family: 'Exo 2', sans-serif;
@@ -2672,6 +2684,7 @@ header {
     .main-general-color-line .gallery-color-line .list-color-line {
       display: flex; }
       .main-general-color-line .gallery-color-line .list-color-line img {
+        width: 135%;
         border-radius: 5px; }
 
 .feedback {
