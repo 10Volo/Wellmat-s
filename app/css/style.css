@@ -2569,7 +2569,8 @@ header {
         header .info-form form .form-input {
           margin: 0 0 10px 0; }
         header .info-form form .btn-sub-order {
-          justify-content: flex-start; } }
+          justify-content: flex-end;
+          justify-content: flex-end; } }
   header .info-play {
     position: absolute;
     left: 50%;
@@ -2637,7 +2638,7 @@ header {
           margin: 16% 0; } }
       .main-general-color .gallery-color .color-skin img {
         border-radius: 5px;
-        width: 135%; }
+        width: 100%; }
 
 .type-line .type-line-title {
   font-family: 'Exo 2', sans-serif;
@@ -2658,6 +2659,9 @@ header {
     margin: 5px 0; }
     .type-line .list-type-line .type-line-exmple .type-line-photo img {
       width: 200px; }
+      @media (max-width: 767px) {
+        .type-line .list-type-line .type-line-exmple .type-line-photo img {
+          width: 130px; } }
     .type-line .list-type-line .type-line-exmple .line-name {
       display: flex;
       align-items: center;
@@ -2684,8 +2688,11 @@ header {
     .main-general-color-line .gallery-color-line .list-color-line {
       display: flex; }
       .main-general-color-line .gallery-color-line .list-color-line img {
-        width: 135%;
+        width: 100%;
         border-radius: 5px; }
+        @media (max-width: 767px) {
+          .main-general-color-line .gallery-color-line .list-color-line img {
+            margin: 16% 0; } }
 
 .feedback {
   margin: 0 0 -60px;
@@ -2812,6 +2819,13 @@ header {
       justify-content: space-between; }
       .order-product .info-form form > .form-order {
         width: calc(50% - 130px); }
+        @media (max-width: 767px) {
+          .order-product .info-form form > .form-order {
+            width: 100%;
+            margin: 0 0 20px 0; } }
+      @media (max-width: 767px) {
+        .order-product .info-form form {
+          display: block; } }
       .order-product .info-form form .form-control {
         height: 83px;
         box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
@@ -2820,6 +2834,9 @@ header {
       .order-product .info-form form .btn-sub-order {
         display: flex;
         justify-content: center; }
+        @media (max-width: 767px) {
+          .order-product .info-form form .btn-sub-order {
+            justify-content: flex-end; } }
       .order-product .info-form form .btn-action {
         width: 91px;
         height: 83px; }
