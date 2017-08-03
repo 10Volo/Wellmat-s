@@ -363,6 +363,10 @@ header {
     margin-top: 90px;
     justify-content: space-between;
 
+    @media (max-width: 767px) {
+      justify-content: space-around;
+    }
+
     .list-color-line {
       display: flex;
       img {

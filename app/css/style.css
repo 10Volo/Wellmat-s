@@ -2685,6 +2685,9 @@ header {
   .main-general-color-line .gallery-color-line {
     margin-top: 90px;
     justify-content: space-between; }
+    @media (max-width: 767px) {
+      .main-general-color-line .gallery-color-line {
+        justify-content: space-around; } }
     .main-general-color-line .gallery-color-line .list-color-line {
       display: flex; }
       .main-general-color-line .gallery-color-line .list-color-line img {
